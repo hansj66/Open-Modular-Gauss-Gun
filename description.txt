@@ -1,0 +1,44 @@
+Description
+
+A modular electromagnetic accelerator that actually works...;)
+
+Warning: This project involves the use of a capacitor bank that contains more than enough energy to kill you. Do not attempt to build this unless you know what you are doing ! 
+(There is a real possibility of poking an eye out or qualifying for a Darwin Award if you make a mistake...)
+
+The inspiration to create this came from reading the books "Kristian Birkeland - The First Space Scientist" (available from Springer) and "Zero To Eighty" by Edwin Fitch Northrup.
+
+Instructions
+
+Each module contains a high voltage charger, an optical trigger, capacitor bank, voltage indicator, accelerator coil and switch circuitry. When the projectile interrupts an infrared beam at one end, it triggers a pulse of several hundred amps through the acceleration coil. The pulse peaks after approximately 4 ms. The projectile is then accelerated through the module. 
+
+This is a modular design that uses optical triggers. Because of this, it is possible to stack several modules to achieve more power (each module weighs approx 1 Kg)
+
+If you want to see the this thing in action, there is a video on YouTube: youtube.com/watch?v=KeSjeUIltcI, and on my blog: timeexpander.com/wordpress/archives/5124 (norwegian only - sorry)
+
+Please be _very_ careful if you plan on building something like this. I am myself an amateur regarding electronics and I can make no promises or guarantees regarding the safety of the electronics or design.
+
+Parts list:
+- thingiverse.com/thing:19687
+- 12-15 V power supply / battery
+- 47 ohm 0,5W resistor
+- 1 kohm 0,5W resistor (2 x)
+- 390 kohm 0,5W resistor
+- 4 kohm 0,5W resistor
+- 450V/1000uF capacitors (6 x. Maximum dimensions are 35 x 65 mm)
+- LED Bargraph display
+- LM3914 
+- 7805 Voltage regulator
+- TSAL7200 (or equivalent) IR diode
+- LTR3208E (or equivalent) phototransistor
+- 2N3904 small signal transistor (or equivalent) 
+- 50RIA120 SCR (or equivalent). Must be able to survive a current of 7-800 A for the pulse duration (typically 8-10 ms)
+- 47 ohm (5W or higher) current limiting resistor (to be mounted between the boost converter and capacitor bank)
+- 450V capable switch with a 300 ohm/5W minimum current limiting resistor (to be mounted across the capacitors as a safety discharge switch. This is essential in case of a misfire. The capacitors can store a lethal charge for more than a day). The design accommodates a switch with a form factor like an arcade microswitch.
+- carbon fiber tube (5 mm outer diameter). Use a dremel tool to create slots for the infrared light beam.
+- approx 150 grams of 1mm insulated copper wire for the accelleration 
+coil. The coil should have a series resistance of approx 0,3-0,4 ohm and an inductance of approx 190 uH (You can counterwind parts of the coil to reduce inductance if you need a higher series resistance). With these parameters the pulse should be critically damped and there will (hopefully) not be a need for additional protection circuitry.
+- plastite screws (12)
+
+(The two additional schematics you will need are in the video)
+
+PS. varying the length of the projectile can make a really big difference in kinetic energy.
